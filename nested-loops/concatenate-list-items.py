@@ -1,5 +1,5 @@
 list1 = ["m", "n", "t"]
-list2 = ["y", "o", "i"]
+list2 = ["y", "o", "o"]
 list3 = [i + j for i, j in zip(list1,list2)]
 print (list3)
 for index_list1, list1_val_at_index in enumerate(list1):
