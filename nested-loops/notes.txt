@@ -1,0 +1,25 @@
+Looping use-cases
+
+
+1) Loop over a single list with a regular for-in:
+for n in numbers:
+    print(n)
+
+2) Loop over multiple lists at the same time with zip:
+for header, rows in zip(headers, columns):
+    print("{}: {}".format(header, ", ".join(rows)))
+Note: 
+Python’s zip function allows us to loop over multiple lists at the same time:
+The zip function takes multiple lists and returns an iterable that provides a tuple of the corresponding elements of each list as we loop over it.
+Note that zip with different size lists will stop after the shortest list runs out of items.    
+
+3) Loop over a list while keeping track of indexes with enumerate:
+for index, line_val in enumerate(lines):
+Note: 
+If we need to keep a count of iterations, use Python built-in function enumerate() for this task.
+Enumerate() method adds a counter to an iterable and returns it in a form of enumerate object. 
+
+4) loop over range of length
+colors = ["red", "green", "blue", "yellow"]
+for i in range(len(colors)):
+    print(colors[i])
