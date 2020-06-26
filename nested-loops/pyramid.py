@@ -10,7 +10,7 @@ def triangle(n):
         # inner loop to handle number spaces 
         # values changing acc. to requirement 
         for j in range(0, k): 
-            print(end=" ") 
+            print(end="-")
       
         # decrementing k after each loop 
         k = k - 1
@@ -27,4 +27,5 @@ def triangle(n):
   
 # Driver Code 
 n = 5
+
 triangle(n) 
